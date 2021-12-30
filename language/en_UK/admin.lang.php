@@ -1255,3 +1255,4 @@ $lang['Advanced features'] = 'Advanced features';
 $lang['Global Gallery Actions'] = 'Global Gallery Actions';
 $lang['Purge Actions'] = 'Purge Actions';
 $lang['Purge Cache'] = 'Purge Cache';
+$lang['Photo'] = 'Photo';
