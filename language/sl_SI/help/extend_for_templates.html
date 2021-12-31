@@ -1,0 +1,51 @@
+<h2>Konfiguracija razširitve predloge</h2>
+
+<h3>O</h3>
+<p>Vašo galerijo Piwigo lahko prilagodite tako, da obstoječe datoteke predlog zamenjate s prilagojenimi različicami. Na primer, privzeto predlogo glave (header.tpl) je mogoče zamenjati s prilagojeno predlogo glave (my-header.tpl). Po predložitvi sprememb v bazo podatkov bo galerija namesto prvotne glave prikazala prilagojeno glavo.<br>
+Razširitve predlog so močan način za ustvarjanje prilagojenih tem za nove in napredne uporabnike. Z uporabo urejevalnika LocalFiles lahko ustvarite lastne podrejene teme.</p>
+
+<h3>Izvirna predloga</h3>
+<p>Tema vsebuje številne datoteke predlog, ki sestavljajo strani galerije. To so izvirne predloge.</p>
+
+<h3>Neobvezna ključna beseda URL</h3>
+<p>To so besede, ki jih najdete v URL-ju galerije za imenom modula. Lahko so tudi aktivne stalne povezave (za več informacij glejte dokumentacijo o stalnih povezavah). <a href="#warnings">OPOZORILO:</a> če sta ista izvirna predloga in ista ključna beseda uporabljeni v več kot eni prilagojeni predlogi, je aktivna samo zadnja.</p>
+
+<h3>Povezana tema</h3>
+<p>Povezana tema je tema, iz katere se zamenjajo datoteke predlog.</p>
+
+<h3>Kje so izvirne predloge?</h3>
+<p>Izvirne predloge so datoteke predlog, ki so priložene vsaki temi. Te so shranjene v <em>/themes/default/template</em> (ali <em>themes/<theme name>/template</em>). Teh datotek predlog ne bi smeli urejati na mestu, saj bodo spremembe izgubljene z nadgradnjo teme.<br>
+Podprte izvirne predloge vključujejo:</p>
+<ul>
+  <li><span class="filename">index.tpl</span></li>
+  <li><span class="filename">mainpage_categories.tpl</span> in/ali <span class="filename">thumbnails.tpl</span></li>
+  <li><span class="filename">menubar.tpl</span></li>
+  <li><span class="filename">header.tpl</span> in/ali <span class="filename">footer.tpl</span></li>
+  <li><span class="filename">picture_content.tpl</span> in/ali <span class="filename">picture.tpl</span></li>
+  <!-- <li><span class="filename">slideshow.tpl</span></li> -->
+  <li><span class="filename">profile.tpl</span> in/ali <span class="filename">profile_content.tpl</span></li>
+  <li><span class="filename">tags.tpl</span></li>
+  <li><span class="filename">upload.tpl</span></li>
+  <li><span class="filename">about.tpl</span></li>
+  <li><span class="filename">popuphelp.tpl</span></li>
+  <li><span class="filename">search.tpl</span> in/ali <span class="filename">search_rules.tpl</span></li>
+  <li><span class="filename">nbm.tpl</span> in/ali <span class="filename">notification.tpl</span></li>
+  <li><span class="filename">identification.tpl</span> in/ali <span class="filename">register.tpl</span></li>
+  <li><span class="filename">redirect.tpl</span></li>
+</ul>
+<h3>Shranjevanje prilagojenih predlog</h3>
+<p>Prilagojene predloge je treba shraniti v mapo z razširitvijo predloge ali podmape. Na primer, <em>/template-extension/my-default/header.tpl</em> (ali <em>/template-extension/<my-theme-name>/header.tpl</em>) Datoteke predlog lahko ima poljubno ime s končnico .tpl. Datoteke predlog v podmapah se prikažejo na zaslonu za konfiguracijo predlog kot razpoložljive predloge po meri.</p>
+<h3>Aktiviranje prilagojenih predlog</h3>
+<p>Izberite izvirno predlogo, ki jo želite zamenjati. Po želji izberite ključno besedo URL, da zagotovite, da je prilagojena predloga prikazana samo na straneh s to ključno besedo. Izberite vezano temo in spremembe bodo veljale za to temo. Pošljite spremembe v bazo podatkov.</p>
+<h3>Deaktiviranje prilagojenih predlog</h3>
+<p>Prekličite izbiro izvirne predloge in pošljite spremembe v bazo podatkov.<br>
+Izbrišite prilagojene datoteke predlog iz mape z razširitvijo predloge.</p>
+
+<a name="warnings"></a>
+<h3>Opozorila</h3>
+<ul>
+  <li><strong>Izvirna predloga</strong> mora biti izvirna predloga, sicer boste morda imeli nepredvidljive rezultate.</li>
+  <li>Če sta ista izvirna predloga in ista ključna beseda URL uporabljena v več kot eni prilagojeni predlogi, je aktivna samo zadnja.</li>
+  <li>Porazdeljene vzorčne datoteke predlog so samo za testne namene. Ne urejajte jih. Ustvarite svoje ali kopirajte obstoječe datoteke predloge teme v <em>/template-extension/<my-theme>/</em></li>
+  <li>Ko je prilagojena predloga izbrisana, se izvirna datoteka predloge takoj ponovno aktivira.</li>
+</ul>
