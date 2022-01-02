@@ -33,6 +33,7 @@ $lang['%d guests'] = "%d guests";
 $lang['%d hour'] = '%d hour';
 $lang['%d hours'] = '%d hours';
 $lang['%d line filtered'] = "%d line filtered";
+$lang['Posted the %s'] = 'Posted the %s';
 $lang['%d lines filtered'] = "%d lines filtered";
 $lang['%d mail was not sent.'] = "%d mail has not been sent.";
 $lang['%d mail was sent.'] = "%d mail has been sent.";
