@@ -1,0 +1,81 @@
+<fieldset>
+ <legend>Hitri začetek</legend>
+
+<ol>
+   <li>Ustvarite imenik v računalniku.</li>
+
+   <li>Kopirajte nekaj fotografij v ta imenik, spremenite njihovo velikost za spletni prikaz. <em>Opozorilo</em>: ime imenikov in datotek mora vsebovati samo črke, številke, "-", "_" ali ".". Brez praznega presledka ali poudarjenih znakov.</li>
+
+   <li>Z odjemalcem FTP kopirajte svoj imenik v imenik "galleries" vaše namestitve Piwiga.</li>
+
+   <li>Prijavite se v svojo galerijo in pojdite na <span class="pwgScreen">Skrbništvo</span> in kliknite velik gumb za sinhronizacijo.</li>
+</ol>
+
+<p>Čestitamo! Uspešno ste ustvarili prvi album svoje fotogalerije.</p>
+</fieldset>
+
+<nabor polj>
+   <legend>Organizacija imenikov in datotek</legend>
+
+<ul>
+
+   <li>
+
+     <p>Imeniki albumov so v imeniku Piwigo
+     "galleries". Tukaj sledi drevo imenikov zelo majhne galerije (vendar
+     z uporabo številnih funkcij):</p>
+
+    <pre>
+galleries
+|-- wedding
+|   |-- celebration
+|   |   |-- arrival
+|   |   |   |-- paul-alone.jpg
+|   |   |   +-- sarah-alone.jpg
+|   |   +-- departure
+|   |       +-- paul-and-sarah.jpg
+|   +-- party
+|       |-- dancers001.jpg
+|       |-- dancers002.jpg
+|       +-- dancers003.jpg
++-- honeymoon
+|   |-- hotel.png
+|   |-- video-from-plane.avi
+|   +-- pwg_representative
+|       +-- video-from-plane.jpg
++-- photoshoot
+    |-- img0001.jpg
+    |-- img0002.jpg
+    +-- pwg_format
+        |-- img0001.cr2
+        |-- img0001.cmyk.jpg
+        |-- img0001.zip
+        |-- img0002.cr2
+        +-- img0002.cmyk.jpg
+</pre>
+
+  </li>
+
+  <li>Razen za "pwg_representative" in "pwg_format" (glejte pojasnila spodaj), vsak imenik pod "galleries" ustvari album. Ni omejitev glede globine.</li>
+
+  <li>V bistvu je element predstavljen z datoteko. Datoteka je lahko a
+  Element Piwigo, če je njegova razširitev med <code>file_ext</code>
+  možnosti konfiguracijskih parametrov (glejte <span
+  class="filename">include/config_default.inc.php</span> datoteka). Datoteka je lahko
+  biti slika, če je njena razširitev med <code>picture_ext</code>
+  možnosti konfiguracijskih parametrov.</li>
+
+  <li>Nefotografski elementi (video, zvoki, besedila datotek, karkoli želite ...) so privzeto predstavljeni z ikono, ki ustreza imenu datoteke
+  razširitev. Po želji lahko povežete sličico in predstavnika
+  (glejte video.avi v zgornjem primeru).</li>
+
+  <li>Več formatov: fotografija je lahko na voljo v več oblikah. V tem primeru imamo 3 dodatne formate za img0001.jpg. To funkcijo lahko aktivirate z <code>$conf['enable_formats'] = true;</code> v vaši lokalni konfiguraciji in definirate seznam formatov, kot je <code>$conf['format_ext'] = array('cmyk) .jpg', 'cr2', 'zip');</code></li>
+
+  <li><em>Opozorilo</em>: ime imenikov in datotek mora vsebovati samo črke, številke, "-", "_" ali ".". Brez praznega presledka ali poudarjenih znakov.</li>
+
+  <li>Ko so fotografije pravilno nameščene v
+  imenikov, pojdite na: <span class="pwgScreen">Administracija &raquo; Orodja &raquo;
+  Sinhroniziraj</span></li>
+
+</ul>
+</fieldset>
